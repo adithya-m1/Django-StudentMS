@@ -1,0 +1,35 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Student registration</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/demo.css' %}">
+</head>
+<body>
+    <h2>Registration</h2>
+    <form method="post">
+        {% csrf_token %}
+        <label>Student Roll no:</label>
+        <input type="text" name="rn"> <br/><br/>
+        <label>Student Name:</label>
+        <input type="text" name="sn"><br/><br/>
+        <label>Year:</label>
+        <input type="number" max="4" min="1" name="sy"><br/><br/>
+        <label>Branch:</label>
+        <select name="sb">
+            <option value="0">---Select Branch----</option>
+            <option value="1">CSE</option>
+            <option value="2">ECE</option>
+            <option value="3">EEE</option>
+            <option value="4">IT</option>
+            <option value="5">CIVIL</option>
+            <option value="6">MECH</option>
+        </select>
+        <br> <br>
+    <button type="reset" id="s2">Clear</button>
+     <button id="s1">Create</button>
+    </form>
+</body>
+</html>

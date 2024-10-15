@@ -1,0 +1,33 @@
+h2{
+    border-radius:12px 30px;
+    border:solid magenta 1px;
+    padding:15px;
+    border-color:green;
+    text-align:center;
+    margin-left:25%;
+    margin-right:25%;
+
+}
+form{
+    border:solid;
+    margin-top: 5%;
+    margin-bottom:5%;
+    margin-right:25%;
+    margin-left:25%;
+    padding:25px;
+
+}
+label{
+    margin-left:15%;
+    margin-right:15%;
+
+}
+#s1{
+    float:right;
+    color:white;
+    background-color: green;
+}
+#s2{
+    color:white;
+    background-color: red;
+}
